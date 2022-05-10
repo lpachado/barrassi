@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratacion</title>
+</head>
+<body>
+    <header>
+        <h1>Contratacion</h1>
+    </header>
+
+    <main>
+        <form name="autos" method="GET" action="" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Informacion Basica</legend>
+    
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" required placeholder="Ingrese su Nombre">
+    
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" required>
+    
+                
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" value="Femenino" checked>
+                <input type="radio" name="sexo" value="Masculino" checked>
+                <input type="radio" name="sexo" value="Otro" checked>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Dirrecion</legend>
+    
+                <label for="ciudad">Ciudad:</label>
+                <select name="ciudad" multiple required>
+                    <option value="zarate">Zarate</option>
+                    <option value="campana">Campana</option>
+                    <option value="esc">Escobar</option>
+                </select>
+    
+                <label for="calle">Calle:</label>
+                <input type="text" name="calle" required>
+    
+                <label for="altura">Altura:</label>
+                <input type="number" name="altura" required>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Extra</legend>
+    
+                <input type="hidden" name="input-hidden" value="123456789">
+                <input type="file" multiple>
+                <textarea name="texto" cols="30" rows="10"></textarea>
+    
+                <select name="autos" id="" multiple>
+    
+                    <optgroup label="Ford">
+                        <option value="ka">Ka</option>
+                        <option value="focus">Focus</option>
+                    </optgroup>
+    
+                    <optgroup label="Toyota">
+                        <option value="etios">Etios</option>
+                        <option value="yaris">Yaris</option>
+                    </optgroup>
+    
+                </select>
+    
+            </fieldset>
+            <input type="reset" name="resetear" value="Borrar todo">
+            <input type="submit" name="guardar">
+        </form>
+    </main>
+
+    <footer>
+        <P>Copyright 2022 - <a href="#"> Instagram </a> </P>
+    </footer>
+</body>
+</html>
